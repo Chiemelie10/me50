@@ -1,0 +1,14 @@
+.form_heading {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    margin: 0 35px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.form_heading label {
+    color: #d93025;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+}

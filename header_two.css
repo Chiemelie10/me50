@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    height: 64px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px 
+}
+
+header nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 99%;
+    height: 80%;
+}
+
+header nav a {
+    color: #d93025;
+    text-decoration: none;
+}
+
+header a img {
+    margin-top: 7px;
+}

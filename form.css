@@ -1,0 +1,109 @@
+.form_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.filter_container {
+    display: flex;
+    width: 584px;
+    max-width: 584px;
+    height: 47px;
+    border-radius: 24px;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+}
+
+.filter_container:hover {
+    box-shadow: 0 0 3px 3px rgba(220, 220, 220, 0.5);
+}
+
+.search_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.text_area {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    width: 100%;
+    margin: 2.5% 15% 2% 0;
+    background-color: #fff;
+    border: none;
+    border-color:white;
+    outline: none;
+}
+
+.submit_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 290px;
+}
+
+input[type="submit"] {
+    padding: 0 16px;
+    margin: 11px 4px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color: #202124;
+    background-color: #F8F9FA;
+    border: 1px solid #F8F9FA;
+    border-radius: 4px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+input[type="submit"]:hover {
+    border-color: #d9dada;
+}
+
+@media only screen and (max-width: 675px) {
+    .filter_container {
+        display: flex;
+        width: 100%;
+        max-width: 584px;
+        height: 47px;
+        border-radius: 24px;
+        margin-bottom: 20px;
+        background: #fff;
+        border: 1px solid #dfe1e5;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    .form_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 10px;
+        height: 25%;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100%;
+    }
+}
