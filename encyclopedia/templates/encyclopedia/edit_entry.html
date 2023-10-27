@@ -1,0 +1,16 @@
+{% extends 'encyclopedia/layout.html' %}
+{% load markdownify %}
+
+{% block body %}
+    <form action="{% url 'edit_entry' %}" method="post">
+        {% csrf_token %}
+        <input type="hidden" id="title" name="title" value="{{ title }}" required>
+        <div style="margin-top: 20px;">
+            <label for="content">Content</label><br>
+            <textarea id="content" name="content" required style="width: 900px; height: 400px;">{{ page_content }}</textarea>
+        </div>
+        <div style="display: flex; justify-content: end; margin-top: 10px; width: 900px;">
+            <input style="padding: 5px 20px;" type="submit" value="submit">
+        </div>
+    </form>
+{% endblock %}

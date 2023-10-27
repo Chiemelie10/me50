@@ -1,0 +1,13 @@
+{% extends "encyclopedia/layout.html" %}
+{% load markdownify %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block body %}
+    <div style="display: flex; justify-content: end; margin-top: 20px;">
+        <a href="{% url 'edit_entry' %}?title={{ title | urlencode }}">Edit entry</a>
+    </div>
+    {{ page_content | markdownify }}
+{% endblock %}
